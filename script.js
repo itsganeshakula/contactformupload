@@ -13,7 +13,7 @@ const firebaseConfig = {
   var contactFormDB=firebase.database().ref("contactform");
 document.getElementById("contactform").addEventListener("submit",submitForm);
 function submitForm(e){
-    e.preventDefault();
+    
     var name=getElementVal('name');
     var email=getElementVal('email');
     savemessage(name,email);
